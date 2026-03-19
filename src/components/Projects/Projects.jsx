@@ -12,19 +12,19 @@ export default function Projects() {
     <section
       id="projects"
       ref={ref}
-      className="py-28 px-16 relative z-10"
+      className="py-16 sm:py-20 lg:py-28 px-4 sm:px-8 lg:px-16 relative z-10"
       style={{ background: 'linear-gradient(180deg,transparent,rgba(8,15,28,0.6),transparent)' }}
     >
       <div className="max-w-[1300px] mx-auto">
         <SectionHeader num="// 03" title="Featured" highlight="Projects" />
 
         {/* Filter bar */}
-        <div className="reveal flex flex-wrap gap-2 mb-10">
+        <div className="reveal flex flex-wrap gap-2 mb-8 sm:mb-10">
           {projectCategories.map(cat => (
             <button
               key={cat}
               onClick={() => setActiveFilter(cat)}
-              className={`px-4 py-[0.38rem] font-mono text-[0.65rem] tracking-[0.05em] border transition-all duration-200
+              className={`px-3 sm:px-4 py-[0.35rem] font-mono text-[0.6rem] sm:text-[0.65rem] tracking-[0.05em] border transition-all duration-200
                 ${activeFilter === cat
                   ? 'border-cyan text-cyan bg-cyan/10'
                   : 'border-[var(--border)] text-muted hover:border-cyan hover:text-cyan hover:bg-cyan/10'

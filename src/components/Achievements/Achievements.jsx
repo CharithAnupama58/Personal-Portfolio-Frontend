@@ -10,12 +10,12 @@ export default function Achievements() {
     <section
       id="achievements"
       ref={ref}
-      className="py-28 px-16 relative z-10"
+      className="py-16 sm:py-20 lg:py-28 px-4 sm:px-8 lg:px-16 relative z-10"
       style={{ background: 'linear-gradient(180deg,transparent,rgba(12,22,40,0.4),transparent)' }}
     >
       <div className="max-w-[1300px] mx-auto">
         <SectionHeader num="// 05" title="Awards &" highlight="Recognition" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
           {achievements.map((item, i) => (
             <AchievementCard key={i} item={item} delay={i % 3} />
           ))}
